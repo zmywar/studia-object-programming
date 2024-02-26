@@ -49,9 +49,7 @@ double Rectangle::Area()
 
 void Rectangle::Print(ostream& out) const
 {
-	cout << name << endl;
-	cout << a << endl;
-	cout << b << endl;
+	out << "name: " << name << " area: " << &Rectangle::Area << " perimeter: " << &Rectangle::Perimeter << endl;
 }
 
 Rectangle::~Rectangle()
